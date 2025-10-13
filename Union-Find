@@ -1,0 +1,59 @@
+public class UnionFind_KOWSIK_M {
+    private int[] parent;
+    private int[] rank;
+
+    // Constructor: initialize parent and rank arrays
+    public UnionFind_KOWSIK_M(int n) {
+        parent = new int[n];
+        rank = new int[n];
+        for (int i = 0; i < n; i++) {
+            parent[i] = i;  // each node is its own parent initially
+            rank[i] = 1;    // initial rank is 1
+        }
+    }
+
+    // Find operation with path compression
+    public int find(int x) {
+        if (parent[x] != x) {
+            parent[x] = find(parent[x]); // path compression
+        }
+        return parent[x];
+    }
+
+    // Union operation by rank
+    public void union(int x, int y) {
+        int rootX = find(x);
+        int rootY = find(y);
+
+        if (rootX == rootY) return; // already in the same set
+
+        if (rank[rootX] < rank[rootY]) {
+            parent[rootX] = rootY;
+        } else if (rank[rootX] > rank[rootY]) {
+            parent[rootY] = rootX;
+        } else {
+            parent[rootY] = rootX;
+            rank[rootX]++;
+        }
+    }
+
+    // Check if two elements belong to the same set
+    public boolean isConnected(int x, int y) {
+        return find(x) == find(y);
+    }
+
+    // Test example
+    public static void main(String[] args) {
+        UnionFind_KOWSIK_M uf = new UnionFind_KOWSIK_M(7);
+
+        uf.union(1, 2);
+        uf.union(2, 3);
+        uf.union(4, 5);
+
+        System.out.println("1 and 3 connected? " + uf.isConnected(1, 3)); // true
+        System.out.println("1 and 5 connected? " + uf.isConnected(1, 5)); // false
+
+        uf.union(3, 5);
+        System.out.println("1 and 5 connected? " + uf.isConnected(1, 5)); // true
+    }
+}
