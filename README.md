@@ -106,9 +106,9 @@ Browse the list of problems below and pick one that hasn't been solved yet, or a
 - [ ] Nearest Exit from Entrance in Maze
 
 ### Heap / Priority Queue
-- [ ] Kth Largest Element in a Stream
+- [x] Kth Largest Element in a Stream ✅
 - [ ] Last Stone Weight
-- [ ] K Closest Points to Origin
+- [x] K Closest Points to Origin ✅
 - [ ] Smallest Number in Infinite Set
 - [ ] Maximum Subsequence Score
 - [ ] Total Cost to Hire K Workers
@@ -135,12 +135,12 @@ Browse the list of problems below and pick one that hasn't been solved yet, or a
 - [ ] Minimum Number of Arrows to Burst Balloons
 
 ### Dynamic Programming - 1D
-- [ ] N-th Tribonacci Number
-- [ ] Min Cost Climbing Stairs
-- [ ] House Robber
-- [ ] House Robber II
+- [x] N-th Tribonacci Number ✅
+- [x] Min Cost Climbing Stairs ✅
+- [x] House Robber ✅
+- [x] House Robber II ✅
 - [ ] Longest Palindromic Substring
-- [ ] Palindromic Substrings
+- [x] Palindromic Substrings ✅
 
 ### Dynamic Programming - Multidimensional
 - [ ] Unique Paths
@@ -190,6 +190,25 @@ We welcome solutions in any programming language! Some popular choices:
 Please be respectful and constructive in all interactions. We're here to learn and help each other grow as developers.
 
 ## 📊 Progress Tracking
+
+### Overall Progress: 75 Problems
+- **Completed**: 6 problems ✅
+- **In Progress**: Multiple solutions being added
+- **Remaining**: 69 problems
+
+### Recent Contributions:
+- ✅ **N-th Tribonacci Number** - C++ solution with space optimization
+- ✅ **Min Cost Climbing Stairs** - C++ solution with DP
+- ✅ **House Robber** - C++ solution with space-optimized DP
+- ✅ **House Robber II** - C++ solution for circular arrangement
+- ✅ **Palindromic Substrings** - Python solution with expand around centers
+- ✅ **K Closest Points to Origin** - Java solution with max heap
+
+### Language Distribution:
+- **C++**: 53.0% (Most solutions)
+- **Java**: 41.7% (Strong presence)
+- **Python**: 3.9% (Growing)
+- **Other**: 1.4% (JavaScript, Go, Rust, etc.)
 
 Check the checkboxes above to see which problems have been solved! The list will be updated as contributions come in.
 
